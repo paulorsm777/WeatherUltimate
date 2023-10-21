@@ -7,11 +7,7 @@ interface CardInfoProps {
 }
 
 const CardInfo: React.FC<CardInfoProps> = ({ children }) => {
-  return (
-    <div className="cardBox">
-      {children}
-    </div>
-  );
+  return <div className="cardBox">{children}</div>;
 };
 
 export default CardInfo;

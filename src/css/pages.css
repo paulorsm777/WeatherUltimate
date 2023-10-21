@@ -46,7 +46,8 @@ body {
     color: rgb(22, 18, 18);
 }
 
-.citySearch, .searchButton {
+.citySearch,
+.searchButton {
     height: 4rem;
     text-align: center;
     font-size: 2.5rem;
@@ -87,7 +88,8 @@ p {
     align-items: center;
     flex-direction: column;
 }
-.box p{
+
+.box p {
     border: 2px black solid;
     border-radius: 10px;
     width: fit-content;

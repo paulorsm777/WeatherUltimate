@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/pages.css";
-import CardInfo from '../components/CardInfo.tsx';
+import CardInfo from "../components/CardInfo.tsx";
 
 interface WeatherData {
   name: string;
@@ -41,7 +41,10 @@ export default function Weather() {
             <h1>{weather.name}</h1>
             <CardInfo>Temperatura: {weather.main.temp}°C</CardInfo>
             <CardInfo>Humidade: {weather.main.humidity}%</CardInfo>
-            <CardInfo>Clima:  {weather.weather[0].main},{" " + weather.weather[0].description}</CardInfo>
+            <CardInfo>
+              Clima: {weather.weather[0].main},
+              {" " + weather.weather[0].description}
+            </CardInfo>
             <CardInfo>Velocidade do vento: {weather.wind.speed} m/s</CardInfo>
             <CardInfo>Visibilidade: {weather.visibility} meters</CardInfo>
           </div>
