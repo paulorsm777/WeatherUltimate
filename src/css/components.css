@@ -22,8 +22,33 @@ a {
     color: white;
 }
 
+a:hover {
+    color: black;
+}
+
 .nav-images {
     height: 3rem;
     margin-right: 20px;
+    filter: invert(100);
 }
 
+.nav-images:hover {
+    filter: sepia();
+}
+
+.cardBox {
+    height: 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+ }
+
+ .cardBox:hover {
+    background-color: bisque;
+ }

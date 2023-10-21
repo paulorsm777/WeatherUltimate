@@ -7,15 +7,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; /* To center vertically in the viewport */
+    height: 100vh;
 }
 
 .App-header {
-    text-align: center; /* Center the content inside App-header */
+    text-align: center;
 }
 
 .App-header h1 {
     font-size: 4rem;
+}
+
+.App-header h1:hover {
+    color: rgb(117, 102, 102);
 }
 
 .searchContainer {
@@ -23,6 +27,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.searchContainer input {
+    background-color: blue;
+    color: white;
+}
+
+.searchContainer input:hover {
+    background-color: rgb(30, 30, 121);
+}
+
+.searchContainer input::placeholder {
+    color: white;
+}
+
+.searchContainer input::placeholder:hover {
+    color: rgb(22, 18, 18);
 }
 
 .citySearch, .searchButton {
@@ -36,7 +57,7 @@ body {
 
 p {
     font-size: 1.5rem;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
 }
 
 .menu {
@@ -53,6 +74,11 @@ p {
     border: none !important;
     height: 6rem;
     margin: 4px;
+    background-color: blue;
+}
+
+.menu button:hover {
+    background-color: rgb(36, 36, 105);
 }
 
 .box {
@@ -69,7 +95,10 @@ p {
 }
 
 .box h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 }
 
+.box h1:hover {
+    color: rgb(117, 102, 102);
+}

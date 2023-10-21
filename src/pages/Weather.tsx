@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/pages.css";
-import CardInfo from "../components/CardInfo";
+import CardInfo from '../components/CardInfo.tsx';
 
 interface WeatherData {
   name: string;
@@ -39,11 +39,11 @@ export default function Weather() {
         {weather && typeof weather.main !== "undefined" ? (
           <div className="box">
             <h1>{weather.name}</h1>
-            <p>Temperatura:  {weather.main.temp}°C</p>
-            <p>Clima:  {weather.weather[0].main},{ " " + weather.weather[0].description}</p>
-            <p>Humidade: {weather.main.humidity}%</p>
-            <p>Velocidade do vento: {weather.wind.speed} m/s</p>
-            <p>Visibilidade: {weather.visibility} meters</p>
+            <CardInfo>Temperatura: {weather.main.temp}°C</CardInfo>
+            <CardInfo>Humidade: {weather.main.humidity}%</CardInfo>
+            <CardInfo>Clima:  {weather.weather[0].main},{" " + weather.weather[0].description}</CardInfo>
+            <CardInfo>Velocidade do vento: {weather.wind.speed} m/s</CardInfo>
+            <CardInfo>Visibilidade: {weather.visibility} meters</CardInfo>
           </div>
         ) : (
           "Loading..."
