@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black !important;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    width: 100%;
+}
+
+.nav-container h1 {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-images {
+    height: 3rem;
+    margin-right: 20px;
+}
+
